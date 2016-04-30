@@ -1,0 +1,8 @@
+{
+  "site": {
+    "styles": "<link href='site.css' media='all' rel='stylesheet' type='text/css'/>"
+  },
+  "framework": {
+    "styles": "<link href='framework.css' media='all' rel='stylesheet' type='text/css'/>"
+  }
+}

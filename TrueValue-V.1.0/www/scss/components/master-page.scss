@@ -1,0 +1,16 @@
+/*This component includes all the styles for header, bare-bones of layout and footer*/
+@import "variables.scss";
+
+@mixin masterPage() {
+    /*header*/
+    .main-header {
+        background-color: $main-theme-background;
+        color: $default-white;
+
+        .site-logo {
+            top: 10px;
+            left: 2px;
+        }
+    }
+    
+}

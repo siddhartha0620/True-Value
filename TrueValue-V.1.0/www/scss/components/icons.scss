@@ -1,0 +1,26 @@
+/*this includes all the classes for all icons*/
+
+@mixin icons() {
+    .icon {
+        background: url('/img/sprite.png') no-repeat;
+        display: inline-block;
+
+        &.site-icon {
+            background-position: -13px -9px;
+            width: 21px;
+            height: 27px;
+        }
+        &.find-reserve-eat {
+
+        }
+        &.fb-btn {
+
+        }
+        &.tw-btn {
+
+        }
+        &.g-plus-btn {
+
+        }
+    }
+}

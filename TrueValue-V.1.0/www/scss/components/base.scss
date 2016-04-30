@@ -1,0 +1,167 @@
+/*these are base and html helper utility classes need for the web site*/
+@import "variables.scss";
+
+@mixin base() {
+    body {
+        background-color: $default-grey;
+        line-height: 1.375em;
+        font-size: 1em;
+        font-family: Tahoma,Verdana,Segoe,sans-serif;
+    }
+    /*styles for heading*/
+    h1,
+    h2,
+    h3,
+    h4,
+    .h1,
+    .h2,
+    .h3,
+    .h4 {
+        font-weight: 300;
+        text-transform: uppercase;
+        line-height: 1.25em;
+    }
+    h1,
+    .h1 {
+        font-size: 3em;
+    }
+    h2,
+    .h2 {
+        font-size: 2.25em; 
+    }
+    h3,
+    .h3 {
+        font-size: 1.75em;
+    }
+    h4,
+    .h4 {
+        font-size: 1.125em;
+    }
+    .title {
+        font-size: 1.17em;
+    }
+    .sub-title {
+        font-size: 1.12em;
+    }
+    .caption {
+        font-size: 0.7em;
+    }
+
+    .xx-large {
+        font-size: 3em;
+    }
+    .x-large {
+        font-size: 2.25em;
+    }
+    .large {
+        font-size: 1.75em;
+    }
+    .medium {
+        font-size: 1em;
+    }
+    .small {
+        font-size: 0.8em;
+    }
+    .x-small {
+        font-size: 0.5em;
+    }
+    .xx-small {
+        font-size: 0.2em;
+    }
+
+    /*for position*/
+    .absolute {
+        position: absolute;
+    }
+    .fixed {
+        position: fixed;
+    }
+    .relative {
+        position: relative;
+    }
+    .show, .block {
+        display: block !important;
+    }
+    .hide {
+        display: none !important;
+    }
+    .inline-block {
+        display: inline-block;
+    }
+    .table {
+        display: table;
+    }
+    /*for text*/
+    .text-center {
+        text-align: center;
+    }
+    .text-right {
+        text-align: right;
+    }
+    .text-left {
+        text-align: left;
+    }
+
+    /*for margin*/
+    .no-margin {
+        margin: 0 !important;
+    }
+    .default-margin-tp-btm {
+        margin-top: $default-margin;
+        margin-bottom: $default-margin;
+    }
+    .default-margin-lft-rt {
+        margin-left: $default-margin;
+        margin-right: $default-margin;
+    }
+    .align-center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*for padding*/
+    .no-padding {
+        padding: 0 !important;
+    }
+    .default-padding-tp-btm {
+        padding-top: $default-margin;
+        padding-bottom: $default-margin;
+    }
+    .default-padding-lft-rt {
+        padding-left: $default-margin;
+        padding-right: $default-margin;
+    }
+
+    /*for list's*/
+    ul.inline-list,
+    ul.block-list,
+    ul.inline-block-list {
+        padding: 0;
+    }
+    ul.inline-list li,
+    ul.block-list li,
+    ul.inline-block-list li {
+        text-decoration: none;
+    }
+    ul.inline-list li{
+        display: inline;
+    }
+    ul.block-list li{
+        display: block;
+    }
+    ul.inline-block-list li{
+        display: inline-block;
+    }
+
+    /*floation*/
+    .fl {
+        float: left;
+    }
+    .fr {
+        float: right;
+    }
+    .clear {
+        clear: both;
+    }
+
+}
