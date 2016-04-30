@@ -6,6 +6,8 @@
 /*This component includes all the styles for header, bare-bones of layout and footer*/
 /*color pallets*/
 /*this includes all the classes for all icons*/
+/*This includes css for home page*/
+/*color pallets*/
 /*the base styles for the web site*/
 body {
   background-color: #e5e5e5;
@@ -107,6 +109,9 @@ h4,
 .highlight {
   color: #008290; }
 
+.cursive {
+  font-family: 'Pacifico', cursive; }
+
 /*for margin*/
 .no-margin {
   margin: 0 !important; }
@@ -197,6 +202,10 @@ ul.inline-block-list li {
     background-position: -13px -9px;
     width: 21px;
     height: 27px; }
+  .icon.find-reserve-eat {
+    background-position: -13px -130px;
+    width: 265px;
+    height: 158px; }
 
 /*viewport specfic styles for the web site*/
 /* Smartphones (portrait and landscape) ----------- */
@@ -246,3 +255,9 @@ ul.inline-block-list li {
 /* iPhone 5 (portrait)----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
   /* STYLES GO HERE */ }
+
+/*includes css for home page*/
+.home-content .moto {
+  left: 226px;
+  margin-top: -42px;
+  width: 142px; }

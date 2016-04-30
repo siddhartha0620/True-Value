@@ -2,6 +2,7 @@
 @import "components/media-query.scss";
 @import "components/master-page.scss";
 @import "components/icons.scss";
+@import "components/home/home.scss";
 /*the base styles for the web site*/
 @include base();
 /*this includes css for header footer and base layout*/
@@ -10,3 +11,5 @@
 @include icons();
 /*viewport specfic styles for the web site*/
 @include mediaQuery();
+/*includes css for home page*/
+@include home();

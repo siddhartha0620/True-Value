@@ -3,6 +3,10 @@
 
 @mixin home() {
     .home-content {
-
+        .moto {
+            left: 226px;
+            margin-top: -42px;
+            width: 142px;
+        }
     }
-}
+} 
