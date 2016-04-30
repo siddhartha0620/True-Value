@@ -20,6 +20,14 @@ module.exports = {
             options: {
                 rev: false
             }
+        },
+        controller: {
+            scripts: [
+                './www/js/controllers/**/*.js'
+            ],
+            options: {
+                rev: false
+            }
         }
     }
 };
