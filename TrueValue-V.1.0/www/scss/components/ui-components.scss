@@ -1,0 +1,33 @@
+/*This file include css for the ui components*/
+@import "variables.scss";
+
+@mixin form-panel() {
+    .form-panel {
+        background-color: $default-white;
+        padding: $defult-padding + 5;
+
+        .form-panel-heading {
+            color: $main-theme-text-highlight;
+        }
+
+        .form-panel-body {
+            .form-group {
+
+            }
+            .form-control-label {
+                color: $main-theme-text-highlight;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+
+@mixin button() {
+    .btn {
+        &.custom-btn-primary {
+            background-color: $main-theme-background;
+            color: $default-white;
+        }
+    }
+}

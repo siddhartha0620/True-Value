@@ -1,5 +1,6 @@
 /*these are base and html helper utility classes need for the web site*/
 @import "variables.scss";
+@import "ui-components.scss";
 
 @mixin base() {
     body {
@@ -101,6 +102,9 @@
     .text-left {
         text-align: left;
     }
+    .highlight {
+        color: $main-theme-text-highlight;
+    }
 
     /*for margin*/
     .no-margin {
@@ -164,4 +168,9 @@
         clear: both;
     }
 
+    /*css for forms*/
+    @include form-panel();
+
+    /*css for buttons*/
+    @include button();
 }

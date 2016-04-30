@@ -1,5 +1,7 @@
 /*these are base and html helper utility classes need for the web site*/
 /*color pallets*/
+/*This file include css for the ui components*/
+/*color pallets*/
 /*this files includes all the basic customizations done based on view port*/
 /*This component includes all the styles for header, bare-bones of layout and footer*/
 /*color pallets*/
@@ -102,6 +104,9 @@ h4,
 .text-left {
   text-align: left; }
 
+.highlight {
+  color: #008290; }
+
 /*for margin*/
 .no-margin {
   margin: 0 !important; }
@@ -159,6 +164,21 @@ ul.inline-block-list li {
 
 .clear {
   clear: both; }
+
+/*css for forms*/
+.form-panel {
+  background-color: #ffffff;
+  padding: 15px; }
+  .form-panel .form-panel-heading {
+    color: #008290; }
+  .form-panel .form-panel-body .form-control-label {
+    color: #008290;
+    font-weight: 500; }
+
+/*css for buttons*/
+.btn.custom-btn-primary {
+  background-color: #008290;
+  color: #ffffff; }
 
 /*this includes css for header footer and base layout*/
 /*header*/
