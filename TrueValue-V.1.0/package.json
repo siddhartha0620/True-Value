@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/siddhartha0620/true-value#readme",
   "devDependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "gulp": "^3.9.1",
+    "gulp-bundle-assets": "^2.24.0",
+    "gulp-sass": "^2.3.1"
   }
 }
