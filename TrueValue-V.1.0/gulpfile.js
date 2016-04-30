@@ -31,5 +31,9 @@ gulp.task('generate-css:watch', function () {
   gulp.watch('./www/scss/**/*.scss', ['generate-css']);
 });
 
+
+/*gulp task that u need to run after a modification to file is done*/
+gulp.task('build', ['bundle-js', 'generate-css']);
+
 /*default gulp task*/
 gulp.task('default', ['bundle-css', 'bundle-js']);

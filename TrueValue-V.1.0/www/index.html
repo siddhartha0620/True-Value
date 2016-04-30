@@ -31,7 +31,13 @@
         <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
 
         <link rel="stylesheet" type="text/css" href="css/bundle/framework.css">
-        <link rel="stylesheet" type="text/css" href="css/bundle/site.css">
+        
+        <!-- use this link for production
+        <link rel="stylesheet" type="text/css" href="css/bundle/site.css"> 
+        -->
+
+        <!-- use this link for development -->
+        <link rel="stylesheet" type="text/css" href="css/site.css"> 
 
         <script type="text/javascript" src="js/bundle/framework.js"></script>
 
@@ -49,24 +55,26 @@
 
             <!-- main - content -->
             <div class="main-content" id="mainContent">
-                <div class="col-sm-12 col-md-12 col-lg-12 no-padding">
-                    <div class="main-header">
-                        <header class="block default-padding-lft-rt">
-                            <div class="glyphicon glyphicon-menu-hamburger absolute main-hamberger large default-padding-tp-btm"></div>
-                            <ul class="inline-block-list text-center">
-                                <li class="site-logo relative"><span class="icon site-icon"></span></li>
-                                <li><h3 class="no-margin default-padding-tp-btm">True Value</h3></li>
-                            </ul>
-                        </header>
-                    </div>
-
-                    <div class="site-content container-fluid" id="siteContent">
-                        <div>
-                            <p ng-bind="welcome"></p>
-                            <div ng-view></div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="main-header">
+                            <header class="block default-padding-lft-rt">
+                                <div class="glyphicon glyphicon-menu-hamburger absolute main-hamberger large default-padding-tp-btm"></div>
+                                <ul class="inline-block-list text-center">
+                                    <li class="site-logo relative"><span class="icon site-icon"></span></li>
+                                    <li><h3 class="no-margin default-padding-tp-btm">True Value</h3></li>
+                                </ul>
+                            </header>
                         </div>
                     </div>
-
+                    <div class="site-content container-fluid" id="siteContent">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <!-- <p ng-bind="welcome"></p> -->
+                                <div ng-view></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- main - content -->
@@ -80,7 +88,7 @@
         <script type="text/javascript" src="js/bundle/controller.js"></script>
 
         <script type="text/javascript" src="js/phone-gap/index.js"></script>
-        
+
         <script type="text/javascript">
             app.initialize();
         </script>
