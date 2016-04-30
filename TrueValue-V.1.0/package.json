@@ -1,0 +1,22 @@
+{
+  "name": "true-value.v.1.0",
+  "version": "1.0.0",
+  "description": "this files includes all the default dev-UI dependencies that are necessary for the project",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siddhartha0620/true-value.git"
+  },
+  "author": "siddhartha pulluru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siddhartha0620/true-value/issues"
+  },
+  "homepage": "https://github.com/siddhartha0620/true-value#readme",
+  "devDependencies": {
+    "express": "^4.13.4"
+  }
+}
