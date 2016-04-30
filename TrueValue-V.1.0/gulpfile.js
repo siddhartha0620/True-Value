@@ -28,7 +28,7 @@ gulp.task('generate-css', function () {
  
 /*gulp task to render css files every time a modification is performed in scss files*/ 
 gulp.task('generate-css:watch', function () {
-  gulp.watch('./www/scss/**/*.scss', ['generate-css', 'bundle-css']);
+  gulp.watch('./www/scss/**/*.scss', ['generate-css']);
 });
 
 /*default gulp task*/
