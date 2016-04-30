@@ -1,0 +1,228 @@
+/*these are base and html helper utility classes need for the web site*/
+/*color pallets*/
+/*this files includes all the basic customizations done based on view port*/
+/*This component includes all the styles for header, bare-bones of layout and footer*/
+/*color pallets*/
+/*this includes all the classes for all icons*/
+/*the base styles for the web site*/
+body {
+  background-color: #e5e5e5;
+  line-height: 1.375em;
+  font-size: 1em;
+  font-family: Tahoma,Verdana,Segoe,sans-serif; }
+
+/*styles for heading*/
+h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,
+.h3,
+.h4 {
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 1.25em; }
+
+h1,
+.h1 {
+  font-size: 3em; }
+
+h2,
+.h2 {
+  font-size: 2.25em; }
+
+h3,
+.h3 {
+  font-size: 1.75em; }
+
+h4,
+.h4 {
+  font-size: 1.125em; }
+
+.title {
+  font-size: 1.17em; }
+
+.sub-title {
+  font-size: 1.12em; }
+
+.caption {
+  font-size: 0.7em; }
+
+.xx-large {
+  font-size: 3em; }
+
+.x-large {
+  font-size: 2.25em; }
+
+.large {
+  font-size: 1.75em; }
+
+.medium {
+  font-size: 1em; }
+
+.small {
+  font-size: 0.8em; }
+
+.x-small {
+  font-size: 0.5em; }
+
+.xx-small {
+  font-size: 0.2em; }
+
+/*for position*/
+.absolute {
+  position: absolute; }
+
+.fixed {
+  position: fixed; }
+
+.relative {
+  position: relative; }
+
+.show, .block {
+  display: block !important; }
+
+.hide {
+  display: none !important; }
+
+.inline-block {
+  display: inline-block; }
+
+.table {
+  display: table; }
+
+/*for text*/
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
+
+/*for margin*/
+.no-margin {
+  margin: 0 !important; }
+
+.default-margin-tp-btm {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.default-margin-lft-rt {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.align-center {
+  margin-left: auto;
+  margin-right: auto; }
+
+/*for padding*/
+.no-padding {
+  padding: 0 !important; }
+
+.default-padding-tp-btm {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.default-padding-lft-rt {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+/*for list's*/
+ul.inline-list,
+ul.block-list,
+ul.inline-block-list {
+  padding: 0; }
+
+ul.inline-list li,
+ul.block-list li,
+ul.inline-block-list li {
+  text-decoration: none; }
+
+ul.inline-list li {
+  display: inline; }
+
+ul.block-list li {
+  display: block; }
+
+ul.inline-block-list li {
+  display: inline-block; }
+
+/*floation*/
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.clear {
+  clear: both; }
+
+/*this includes css for header footer and base layout*/
+/*header*/
+.main-header {
+  background-color: #008290;
+  color: #ffffff; }
+  .main-header .site-logo {
+    top: 10px;
+    left: 2px; }
+
+/*this includes css for all the icons*/
+.icon {
+  background: url("/img/sprite.png") no-repeat;
+  display: inline-block; }
+  .icon.site-icon {
+    background-position: -13px -9px;
+    width: 21px;
+    height: 27px; }
+
+/*viewport specfic styles for the web site*/
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* STYLES GO HERE */
+  body {
+    line-height: 1.25em; } }
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* STYLES GO HERE */ }
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* STYLES GO HERE */ }
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* STYLES GO HERE */
+  body {
+    line-height: 1.25em; } }
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* STYLES GO HERE */ }
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* STYLES GO HERE */ }
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* STYLES GO HERE */ }
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* STYLES GO HERE */ }
+
+/* iPhone 5 (portrait &amp; landscape)----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  /* STYLES GO HERE */ }
+
+/* iPhone 5 (landscape)----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+  /* STYLES GO HERE */ }
+
+/* iPhone 5 (portrait)----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  /* STYLES GO HERE */ }
