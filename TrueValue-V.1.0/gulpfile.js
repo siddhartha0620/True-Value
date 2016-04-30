@@ -32,4 +32,4 @@ gulp.task('generate-css:watch', function () {
 });
 
 /*default gulp task*/
-gulp.task('default', ['generate-css', 'bundle-css', 'bundle-js']);
+gulp.task('default', ['bundle-css', 'bundle-js']);
