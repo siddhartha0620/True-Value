@@ -1,2 +1,2 @@
-!function(){"use strict";var e=angular.module("initApp",["ngRoute"]),o=function(e){e.welcome="working-6"},n=function(e){e.when("/home",{templateUrl:"views/pages/home/index.html",controller:"homeCntrl"}).otherwise({redirectTo:"/home"})};e.controller("mainCntrl",["$scope",o]),e.config(["$routeProvider",n])}();
+!function(){"use strict";var e=angular.module("initApp",["ngRoute"]),o=function(){var e=$("#mainContent");e.toggleClass("slide-right")},n=function(e){e.welcome="working-6",e.slideRight=o},t=function(e){e.when("/home",{templateUrl:"views/pages/home/index.html",controller:"homeCntrl"}).otherwise({redirectTo:"/home"})};e.controller("mainCntrl",["$scope",n]),e.config(["$routeProvider",t])}();
 //# sourceMappingURL=maps/application.js.map

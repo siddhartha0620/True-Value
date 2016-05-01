@@ -48,20 +48,20 @@
     <body ng-controller="mainCntrl">
         <div class="content">
             <!-- slide nav -->
-            <div class="main-slide-nav fixed hide">
+            <div class="main-slide-nav fixed" id="mainSlideNav">
                 <div class="col-sm-3 col-md-3 col-lg-3">
-                    
+                    <p>hey...</p>
                 </div>
             </div>
             <!-- slide nav -->
 
             <!-- main - content -->
-            <div class="main-content" id="mainContent">
+            <div class="main-content relative" id="mainContent">
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-12">
                         <div class="main-header">
                             <header class="block default-padding-lft-rt">
-                                <div class="glyphicon glyphicon-menu-hamburger absolute main-hamberger large default-padding-tp-btm"></div>
+                                <div class="glyphicon glyphicon-menu-hamburger absolute main-hamberger large default-padding-tp-btm" ng-click="slideRight()"></div>
                                 <ul class="inline-block-list text-center">
                                     <li class="site-logo relative"><span class="icon site-icon"></span></li>
                                     <li><h3 class="no-margin default-padding-tp-btm">True Value</h3></li>

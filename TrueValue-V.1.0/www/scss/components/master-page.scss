@@ -2,6 +2,24 @@
 @import "variables.scss";
 
 @mixin masterPage() {
+    /*main slide nav*/
+    .main-slide-nav {
+        background-color: $main-theme-nav-color;
+        left: 0;
+    }
+
+    .main-content {
+        box-shadow: -5px 1px 22px -2px rgba(0,0,0,0.75);
+        left: 0;
+        -webkit-transition: left 0.8s; /* For Safari 3.1 to 6.0 */
+        transition: left 0.8s;
+        z-index: 10;
+
+        &.slide-right {
+            left: 50%;
+        }
+    }
+
     /*header*/
     .main-header {
         background-color: $main-theme-background;

@@ -2,8 +2,15 @@
     "use strict";
 
     var myApp = angular.module('initApp', ['ngRoute']),
+        slideRight = function () {
+            var element = $('#mainContent');
+
+            element.toggleClass('slide-right');
+        },
         mainCntrl = function ($scope) { 
-            $scope.welcome = "working-6"; 
+            $scope.welcome = "working-6";
+
+            $scope.slideRight = slideRight; 
         },
         initRoutes = function ($routeProvider) {
             $routeProvider

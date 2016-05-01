@@ -186,6 +186,21 @@ ul.inline-block-list li {
   color: #ffffff; }
 
 /*this includes css for header footer and base layout*/
+/*main slide nav*/
+.main-slide-nav {
+  background-color: #262626;
+  left: 0; }
+
+.main-content {
+  box-shadow: -7px 3px 13px -1px rgba(0, 0, 0, 0.75);
+  left: 0;
+  -webkit-transition: left 0.8s;
+  /* For Safari 3.1 to 6.0 */
+  transition: left 0.8s;
+  z-index: 10; }
+  .main-content.slide-right {
+    left: 50%; }
+
 /*header*/
 .main-header {
   background-color: #008290;
