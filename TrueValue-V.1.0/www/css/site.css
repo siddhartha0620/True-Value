@@ -192,7 +192,7 @@ ul.inline-block-list li {
   left: 0; }
 
 .main-content {
-  box-shadow: -7px 3px 13px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: -5px 1px 22px -2px rgba(0, 0, 0, 0.75);
   left: 0;
   -webkit-transition: left 0.8s;
   /* For Safari 3.1 to 6.0 */
