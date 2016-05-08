@@ -3,7 +3,6 @@ module.exports = {
     bundle: {
         framework: {
             styles: [
-                './www/css/lib/normalize.css',
                 './www/css/lib/bootstrap.css',
                 './www/css/lib/bootstrap-4.v.alpha.css',
                 './www/css/lib/bootstrap-theme.css',

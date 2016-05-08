@@ -1,22 +1,78 @@
 /*This component includes all the styles for header, bare-bones of layout and footer*/
 @import "variables.scss";
+@import "mixin.scss";
+
+$nav-list-padding: 15px;
 
 @mixin masterPage() {
+    .trvalue-content {
+        display: table-cell;
+        height: 100%;
+        z-index: 10;
+    }
     /*main slide nav*/
     .main-slide-nav {
         background-color: $main-theme-nav-color;
+        color: $main-theme-nav-label;
         left: 0;
+        width: 40%;
+
+        a.link {
+            color: $main-theme-nav-label;
+        }
+
+        .nav-logo {
+            margin-bottom: 80px;
+            padding: $nav-list-padding;
+            text-align: center;
+
+            @include border(0, 0, 1px, 0, $black-pallet-1);
+        }
+
+        .nav-menu {
+            &:first-child {
+                @include border(1px, 0, 1px, 0, $black-pallet-1);
+            }
+            li {
+                padding: $nav-list-padding;
+                text-align: center;
+                @include border(0, 0, 1px, 0, $black-pallet-1);
+            }
+        }
+
+        .terms-conditions {
+            bottom: 10px;
+            padding: $nav-list-padding;
+
+            p { 
+                word-break: break-all;
+            }
+
+            
+        }
     }
 
     .main-content {
+        background-color: $default-grey;
         box-shadow: -5px 1px 22px -2px rgba(0,0,0,0.75);
         left: 0;
+        margin-left: 0;
         -webkit-transition: left 0.8s; /* For Safari 3.1 to 6.0 */
         transition: left 0.8s;
         z-index: 10;
 
         &.slide-right {
-            left: 50%;
+            left: 40%;
+        }
+
+        .site-content {
+
+        }
+
+        .search-panel {
+            background-color: $main-theme-background;
+            bottom: -20px;
+            padding: 8px 10px;
         }
     }
 

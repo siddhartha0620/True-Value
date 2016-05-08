@@ -1,0 +1,20 @@
+<div class="nav-container x-medium fill-height">
+    <!-- <p>loaded directive <span ng-bind="sanitized.data"></span></p> -->
+    <div class="nav-logo">
+        
+    </div>
+   <nav>    
+        <ul class="block-list nav-menu">
+            <li ng-repeat="item in sanitized.data.menuList">
+                <span class="{{item.listClass}}"></span>
+                <span ng-bind="item.listItemName"></span>
+            </li>
+        </ul>
+   </nav>
+   <div class="absolute small terms-conditions text-center">
+        <div>
+            <span class="glyphicon glyphicon-education"></span>
+            <span>Terms & Conditions</span>
+        </div>
+   </div>
+</div>

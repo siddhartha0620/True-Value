@@ -21,9 +21,17 @@ module.exports = {
                 rev: false
             }
         },
-        controller: {
+        controllers: {
             scripts: [
                 './www/js/controllers/**/*.js'
+            ],
+            options: {
+                rev: false
+            }
+        },
+        directives: {
+            scripts: [
+                './www/js/directives/**/*.js'
             ],
             options: {
                 rev: false

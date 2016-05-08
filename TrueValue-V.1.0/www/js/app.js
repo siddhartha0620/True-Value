@@ -1,7 +1,7 @@
 (function () {
     "use strict";
 
-    var myApp = angular.module('initApp', ['ngRoute']),
+    var myApp = angular.module('trValueApp', ['ngRoute']),
         slideRight = function () {
             var element = $('#mainContent');
 
@@ -17,6 +17,10 @@
                 .when('/home', {
                     templateUrl: 'views/pages/home/index.html',
                     controller: 'homeCntrl'
+                })
+                .when('/register', {
+                    templateUrl: 'views/pages/register/index.html',
+                    controller: 'registerCntrl'
                 })
                 .otherwise({
                     redirectTo: '/home'

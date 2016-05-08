@@ -1,0 +1,9 @@
+@import "variables.scss";
+
+
+@mixin border($tp: 1, $rt: 1, $btm: 1, $lft: 1, $clr: $default-green) {
+    border: solid;
+    border-width: $tp $rt $btm $lft;
+    border-style: solid;
+    border-color: $clr;
+}

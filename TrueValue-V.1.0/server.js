@@ -8,6 +8,7 @@ var express = require('express'),
 		css: '/www/css',
 		fonts: '/www/fonts',
 		img: '/www/img',
+		svg: '/www/svg',
 		javascript: '/www/js',
 		views: '/www/views'
 	};
@@ -26,6 +27,7 @@ app.get('/', function (req, res) {
 /*configuring the app to load static assets.*/
 app.use('/css', express.static(__dirname + appConfig.css)); //route all the css files.
 app.use('/img', express.static(__dirname + appConfig.img)); //route all the css files.
+app.use('/svg', express.static(__dirname + appConfig.svg)); //route all the css files.
 app.use('/fonts', express.static(__dirname + appConfig.fonts)); //route all the font files.
 app.use('/js', express.static(__dirname + appConfig.javascript)); //routue all js files.
 app.use('/views', express.static(__dirname + appConfig.views)); //routes all views.

@@ -3,11 +3,18 @@
 @import "ui-components.scss";
 
 @mixin base() {
+    html {
+        height: 100%;
+    }
     body {
         background-color: $default-grey;
         line-height: 1.375em;
         font-size: 0.8em;
         font-family: Tahoma,Verdana,Segoe,sans-serif;
+        min-height: 100%;
+    }
+    p {
+        margin: 0px;
     }
     /*styles for heading*/
     h1,
@@ -57,6 +64,12 @@
     .large {
         font-size: 1.75em;
     }
+    .xx-medium {
+        font-size: 1.5em;
+    }
+    .x-medium {
+        font-size: 1.2em;
+    }
     .medium {
         font-size: 1em;
     }
@@ -68,6 +81,18 @@
     }
     .xx-small {
         font-size: 0.2em;
+    }
+    .color-pallet-black {
+        color: $default-black;
+    }
+    .color-pallet-gold {
+        color: $default-gold;
+    }
+    .color-pallet-green {
+        color: $default-green;
+    }
+    .color-pallet-white {
+        color: $default-white;
     }
 
     /*for position*/
@@ -169,6 +194,46 @@
     }
     .clear {
         clear: both;
+    }
+    .no-float {
+        float: none;
+    }
+
+
+    /*custom rows & cols*/
+    .box {
+      display: flex;
+      flex-flow: column;
+      height: 100%;
+    }
+    .row {
+        margin: 0;
+        padding: 0;
+    }
+    .fill-height {
+        height: 100%;
+        min-height: 100%;
+    }
+    .fill-width {
+        width: 100%;
+        min-width: 100%
+    }
+    .custom-table-row {
+        display: table;
+
+        [class^="col-"] {
+            display: table-cell;
+        }
+    }
+    .custom-flex-row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: stretch;
+
+        [class^="col-"] {
+            
+        }
     }
 
     /*css for forms*/

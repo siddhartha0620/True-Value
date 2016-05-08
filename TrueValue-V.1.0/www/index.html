@@ -19,7 +19,7 @@
     specific language governing permissions and limitations
     under the License.
 -->
-<html ng-app="initApp">
+<html ng-app="trValueApp">
 
     <head>
         <title>true value</title>
@@ -39,43 +39,75 @@
         -->
 
         <!-- use this link for development -->
-        <link rel="stylesheet" type="text/css" href="css/site.css"> 
+        <link rel="stylesheet" type="text/css" href="css/site.css">
+        <script src="http://192.168.1.16:8080/target/target-script-min.js#anonymous"></script> 
 
         <script type="text/javascript" src="js/bundle/framework.js"></script>
 
     </head>
 
-    <body ng-controller="mainCntrl">
-        <div class="content">
+    <body class="relative table" ng-controller="mainCntrl">
+        <div class="trvalue-content">
             <!-- slide nav -->
-            <div class="main-slide-nav fixed" id="mainSlideNav">
-                <div class="col-sm-3 col-md-3 col-lg-3">
-                    <p>hey...</p>
+            <div class="main-slide-nav absolute fill-height" id="mainSlideNav">
+                <div class="row fill-height">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 fill-width fill-height">
+                        <div class="nav-container x-medium fill-height">
+                            <!-- <p>loaded directive <span ng-bind="sanitized.data"></span></p> -->
+                            <div class="nav-logo">
+                                
+                            </div>
+                           <nav>    
+                                <ul class="block-list nav-menu">
+                                    <li>
+                                        <a href="#/home" class="link">
+                                            <span class="glyphicon glyphicon-home"></span>
+                                            <span>Home</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#/register" class="link">
+                                            <span class="glyphicon glyphicon-user"></span>
+                                            <span>Register</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#/search" class="link">
+                                            <span class="glyphicon glyphicon-cutlery"></span>
+                                            <span>Search</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                           </nav>
+                           <div class="absolute small terms-conditions text-center">
+                                <div>
+                                    <span class="glyphicon glyphicon-education"></span>
+                                    <span>Terms & Conditions</span>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- slide nav -->
 
             <!-- main - content -->
-            <div class="main-content relative" id="mainContent">
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="main-content inline-block relative fill-width fill-height" id="mainContent">
+                <div class="row fill-height">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fill-height fill-width no-padding">
                         <div class="main-header">
                             <header class="block default-padding-lft-rt">
                                 <div class="glyphicon glyphicon-menu-hamburger absolute main-hamberger large default-padding-tp-btm" ng-click="slideRight()"></div>
-                                <ul class="inline-block-list text-center">
-                                    <li class="site-logo relative"><span class="icon site-icon"></span></li>
-                                    <li><h3 class="no-margin default-padding-tp-btm">True Value</h3></li>
-                                </ul>
+                                <div class="">
+                                    <div class="icon site-icon table normal align-center"></div>
+                                </div>
                             </header>
                         </div>
-                    </div>
-                    <div class="site-content container" id="siteContent">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-12 col-lg-12">
-                                <!-- <p ng-bind="welcome"></p> -->
-                                <div ng-view></div>
-                            </div>
+
+                        <div class="site-content" id="siteContent">
+                            <div class="fill-height" ng-view></div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -87,7 +119,9 @@
 
         <script type="text/javascript" src="js/bundle/application.js"></script>
 
-        <script type="text/javascript" src="js/bundle/controller.js"></script>
+        <script type="text/javascript" src="js/bundle/controllers.js"></script>
+
+        <script type="text/javascript" src="js/bundle/directives.js"></script>
 
         <script type="text/javascript" src="js/phone-gap/index.js"></script>
 

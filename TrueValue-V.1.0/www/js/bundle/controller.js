@@ -1,2 +1,2 @@
-!function(){"use strict";var o=angular.module("initApp"),n=function(o){o.test="home controller is working - 3"};o.controller("homeCntrl",["$scope",n])}();
+!function(){"use strict";var o=angular.module("trValueApp"),r=function(o){o.test="home controller is working - 3"};o.controller("homeCntrl",["$scope",r])}();
 //# sourceMappingURL=maps/controller.js.map

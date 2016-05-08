@@ -5,15 +5,23 @@
 /*this files includes all the basic customizations done based on view port*/
 /*This component includes all the styles for header, bare-bones of layout and footer*/
 /*color pallets*/
+/*color pallets*/
 /*this includes all the classes for all icons*/
 /*This includes css for home page*/
 /*color pallets*/
 /*the base styles for the web site*/
+html {
+  height: 100%; }
+
 body {
   background-color: #e5e5e5;
   line-height: 1.375em;
   font-size: 0.8em;
-  font-family: Tahoma,Verdana,Segoe,sans-serif; }
+  font-family: Tahoma,Verdana,Segoe,sans-serif;
+  min-height: 100%; }
+
+p {
+  margin: 0px; }
 
 /*styles for heading*/
 h1,
@@ -62,6 +70,12 @@ h4,
 .large {
   font-size: 1.75em; }
 
+.xx-medium {
+  font-size: 1.5em; }
+
+.x-medium {
+  font-size: 1.2em; }
+
 .medium {
   font-size: 1em; }
 
@@ -73,6 +87,18 @@ h4,
 
 .xx-small {
   font-size: 0.2em; }
+
+.color-pallet-black {
+  color: #b16d22; }
+
+.color-pallet-gold {
+  color: #b26d22; }
+
+.color-pallet-green {
+  color: #008290; }
+
+.color-pallet-white {
+  color: #ffffff; }
 
 /*for position*/
 .absolute {
@@ -170,6 +196,38 @@ ul.inline-block-list li {
 .clear {
   clear: both; }
 
+.no-float {
+  float: none; }
+
+/*custom rows & cols*/
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%; }
+
+.row {
+  margin: 0;
+  padding: 0; }
+
+.fill-height {
+  height: 100%;
+  min-height: 100%; }
+
+.fill-width {
+  width: 100%;
+  min-width: 100%; }
+
+.custom-table-row {
+  display: table; }
+  .custom-table-row [class^="col-"] {
+    display: table-cell; }
+
+.custom-flex-row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch; }
+
 /*css for forms*/
 .form-panel {
   background-color: #ffffff;
@@ -179,6 +237,10 @@ ul.inline-block-list li {
   .form-panel .form-panel-body .form-control-label {
     color: #008290;
     font-weight: 500; }
+  .form-panel .form-panel-body .form-control {
+    margin: 5px 0px; }
+  .form-panel .form-group {
+    margin: 10px 0; }
 
 /*css for buttons*/
 .btn.custom-btn-primary {
@@ -186,20 +248,60 @@ ul.inline-block-list li {
   color: #ffffff; }
 
 /*this includes css for header footer and base layout*/
+.trvalue-content {
+  display: table-cell;
+  height: 100%;
+  z-index: 10; }
+
 /*main slide nav*/
 .main-slide-nav {
   background-color: #262626;
-  left: 0; }
+  color: #b26d22;
+  left: 0;
+  width: 40%; }
+  .main-slide-nav a.link {
+    color: #b26d22; }
+  .main-slide-nav .nav-logo {
+    margin-bottom: 80px;
+    padding: 15px;
+    text-align: center;
+    border: solid;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #343434; }
+  .main-slide-nav .nav-menu:first-child {
+    border: solid;
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    border-color: #343434; }
+  .main-slide-nav .nav-menu li {
+    padding: 15px;
+    text-align: center;
+    border: solid;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #343434; }
+  .main-slide-nav .terms-conditions {
+    bottom: 10px;
+    padding: 15px; }
+    .main-slide-nav .terms-conditions p {
+      word-break: break-all; }
 
 .main-content {
+  background-color: #e5e5e5;
   box-shadow: -5px 1px 22px -2px rgba(0, 0, 0, 0.75);
   left: 0;
+  margin-left: 0;
   -webkit-transition: left 0.8s;
   /* For Safari 3.1 to 6.0 */
   transition: left 0.8s;
   z-index: 10; }
   .main-content.slide-right {
-    left: 50%; }
+    left: 40%; }
+  .main-content .search-panel {
+    background-color: #008290;
+    bottom: -20px;
+    padding: 8px 10px; }
 
 /*header*/
 .main-header {
@@ -210,17 +312,19 @@ ul.inline-block-list li {
     left: 2px; }
 
 /*this includes css for all the icons*/
-.icon {
-  background: url("/img/sprite.png") no-repeat;
-  display: inline-block; }
-  .icon.site-icon {
-    background-position: -13px -9px;
-    width: 21px;
-    height: 27px; }
-  .icon.find-reserve-eat {
-    background-position: -13px -130px;
-    width: 265px;
-    height: 158px; }
+.icon.site-icon {
+  background: url("../svg/true-value-title.svg");
+  background-repeat: no-repeat; }
+  .icon.site-icon.normal {
+    width: 130px;
+    height: 50px; }
+
+.icon.find-reserve-eat {
+  background: url("../svg/eat-find-reserve.svg");
+  background-repeat: no-repeat; }
+  .icon.find-reserve-eat.normal {
+    width: 200px;
+    height: 200px; }
 
 /*viewport specfic styles for the web site*/
 /* Smartphones (portrait and landscape) ----------- */
@@ -273,6 +377,6 @@ ul.inline-block-list li {
 
 /*includes css for home page*/
 .home-content .moto {
-  left: 226px;
-  margin-top: -42px;
+  left: 176px;
+  margin-top: -70px;
   width: 142px; }

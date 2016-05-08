@@ -2,27 +2,67 @@
 
 @mixin icons() {
     .icon {
-        background: url('/img/sprite.png') no-repeat;
-        display: inline-block;
 
         &.site-icon {
-            background-position: -13px -9px;
-            width: 21px;
-            height: 27px;
-        }
+            background:url('../svg/true-value-title.svg');
+            background-repeat: no-repeat;
+            &.small {
+
+            }
+            &.normal {
+                width: 130px;
+                height: 50px;
+            }
+            &.large {
+
+            }
+        }       
         &.find-reserve-eat {
-            background-position: -13px -130px;
-            width: 265px;
-            height: 158px;
+            background:url('../svg/eat-find-reserve.svg');
+            background-repeat: no-repeat;
+            &.small {
+
+            }
+            &.normal {
+                width: 200px;
+                height: 200px;
+            }
+            &.large {
+                
+            }
         }
         &.fb-btn {
+            &.small {
 
+            }
+            &.normal {
+
+            }
+            &.large {
+                
+            }
         }
         &.tw-btn {
+            &.small {
 
+            }
+            &.normal {
+
+            }
+            &.large {
+                
+            }
         }
         &.g-plus-btn {
+            &.small {
 
+            }
+            &.normal {
+
+            }
+            &.large {
+                
+            }
         }
     }
 }

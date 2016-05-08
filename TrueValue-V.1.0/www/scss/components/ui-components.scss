@@ -18,6 +18,13 @@
                 color: $main-theme-text-highlight;
                 font-weight: 500;
             }
+            .form-control {
+                margin: 5px 0px;
+            }
+        }
+
+        .form-group {
+            margin: 10px 0;
         }
     }
 }
