@@ -3,6 +3,8 @@
 @import "components/master-page.scss";
 @import "components/icons.scss";
 @import "components/home/home.scss";
+@import "components/order/order-register.scss";
+
 /*the base styles for the web site*/
 @include base();
 /*this includes css for header footer and base layout*/
@@ -13,3 +15,5 @@
 @include mediaQuery();
 /*includes css for home page*/
 @include home();
+/*include css for order user registration page*/
+@include orderRegister();

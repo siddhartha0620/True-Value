@@ -82,6 +82,8 @@
     .xx-small {
         font-size: 0.2em;
     }
+    
+    /*for colors*/
     .color-pallet-black {
         color: $default-black;
     }
@@ -117,6 +119,7 @@
     .table {
         display: table;
     }
+
     /*for text*/
     .text-center {
         text-align: center;
@@ -132,6 +135,9 @@
     }
     .cursive {
         font-family: 'Pacifico', cursive;
+    }
+    .bold {
+        font-weight: 800;    
     }
 
     /*for margin*/

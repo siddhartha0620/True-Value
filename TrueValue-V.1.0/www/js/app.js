@@ -22,6 +22,18 @@
                     templateUrl: 'views/pages/register/index.html',
                     controller: 'registerCntrl'
                 })
+                .when('/order/register', {
+                    templateUrl: 'views/pages/order/register.html',
+                    controller: 'orderCntrl'
+                })
+                .when('/order/reserve', {
+                    templateUrl: 'views/pages/order/reserve.html',
+                    controller: 'orderCntrl'
+                })
+                .when('/order/confirmation', {
+                    templateUrl: 'views/pages/order/confirmation.html',
+                    controller: 'orderCntrl'
+                })
                 .otherwise({
                     redirectTo: '/home'
                 });

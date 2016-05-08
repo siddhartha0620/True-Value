@@ -1,10 +1,13 @@
 /*This file include css for the ui components*/
 @import "variables.scss";
+@import "mixin.scss";
 
 @mixin form-panel() {
     .form-panel {
         background-color: $default-white;
         padding: $defult-padding + 5;
+
+        @include boxShadow(); 
 
         .form-panel-heading {
             color: $main-theme-text-highlight;

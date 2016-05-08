@@ -2,12 +2,16 @@
 /*color pallets*/
 /*This file include css for the ui components*/
 /*color pallets*/
+/*color pallets*/
 /*this files includes all the basic customizations done based on view port*/
 /*This component includes all the styles for header, bare-bones of layout and footer*/
 /*color pallets*/
 /*color pallets*/
 /*this includes all the classes for all icons*/
 /*This includes css for home page*/
+/*color pallets*/
+/*This includes css for order registration page*/
+/*color pallets*/
 /*color pallets*/
 /*the base styles for the web site*/
 html {
@@ -88,6 +92,7 @@ h4,
 .xx-small {
   font-size: 0.2em; }
 
+/*for colors*/
 .color-pallet-black {
   color: #b16d22; }
 
@@ -137,6 +142,9 @@ h4,
 
 .cursive {
   font-family: 'Pacifico', cursive; }
+
+.bold {
+  font-weight: 800; }
 
 /*for margin*/
 .no-margin {
@@ -231,7 +239,10 @@ ul.inline-block-list li {
 /*css for forms*/
 .form-panel {
   background-color: #ffffff;
-  padding: 15px; }
+  padding: 15px;
+  -webkit-box-shadow: 0 0 13px 0 #e5e5e5;
+  -moz-box-shadow: 0 0 13px 0 #e5e5e5;
+  box-shadow: 0 0 13px 0 #e5e5e5; }
   .form-panel .form-panel-heading {
     color: #008290; }
   .form-panel .form-panel-body .form-control-label {
@@ -380,3 +391,13 @@ ul.inline-block-list li {
   left: 176px;
   margin-top: -70px;
   width: 142px; }
+
+/*include css for order user registration page*/
+.order-registration-content .discount-tile {
+  padding: 15px 15px 28px 15px;
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 63px 3px #008290;
+  -moz-box-shadow: inset 0 0 63px 3px #008290;
+  box-shadow: inset 0 0 63px 3px #008290; }
