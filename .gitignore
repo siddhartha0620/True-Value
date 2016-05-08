@@ -48,3 +48,9 @@ Temporary Items
 
 TrueValue-V.1.0/platforms/**
 TrueValue-V.1.0/node_modules/**
+TrueValue-V.1.0/platforms/browser/**
+TrueValue-V.1.0/platforms/browser/**/**.*
+TrueValue-V.1.0/platforms/browser/www/css/site.css
+TrueValue-V.1.0/platforms/browser/www/index.html
+TrueValue-V.1.0/www/js/directives/test.css
+TrueValue-V.1.0/platforms/browser/www/js/app.js
