@@ -7,3 +7,15 @@
     border-style: solid;
     border-color: $clr;
 }
+
+@mixin boxShadow($horizotal: 0, $verticle: 0, $blur: 13px, $spread: 0, $clr: $default-grey, $style: null) {
+    -webkit-box-shadow: $style $horizotal $verticle $blur $spread $clr;
+    -moz-box-shadow: $style $horizotal $verticle $blur $spread $clr;
+    box-shadow: $style $horizotal $verticle $blur $spread $clr;
+}
+
+@mixin borderRadius ($tp-lft: 5px, $tp-rt: 5px, $btm-rt: 5px, $btm-lft: 5px) {
+    border-radius: $tp-lft $tp-rt $btm-rt $btm-lft;
+    -moz-border-radius: $tp-lft $tp-rt $btm-rt $btm-lft;
+    -webkit-border-radius: $btm-lft;
+}
